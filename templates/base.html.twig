@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}My Application{% endblock %}</title>
-    </head>
-    <body>
-        {% block body %}
-       	    <div id="content">
-                {% block content %}{% endblock %}
-            </div>
-        {% endblock %}
-    </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Ma Table de Pythagore{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
 </html>
